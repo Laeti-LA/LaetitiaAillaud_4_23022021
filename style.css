@@ -1040,3 +1040,46 @@ h4 {
         text-align: center;
     }
 }
+
+
+/* Modifications pour Optimisation SEO/Accessibilité */ 
+figure{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+@media (max-width: 767px){
+    figure{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+blockquote::before{
+    content: "\f10d";
+    font-family: "FontAwesome";
+    font-style: initial;
+    color: #F3976C;
+    font-size: 30px;
+    position: absolute;
+    left: 80px;
+}
+
+.quote__text{
+    font-size: 24px;
+    line-height: 24px;
+}
+
+@media (max-width: 767px){
+    blockquote::before{
+        position: absolute;
+        left: 60px;
+    }
+}
+
+@media (max-width: 767px){
+    .quote__text{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
