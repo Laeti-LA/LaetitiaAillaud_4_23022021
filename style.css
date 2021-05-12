@@ -640,7 +640,6 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -652,6 +651,11 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+h2{
+    font-family: "helvetica";
+    font-weight: 600;
 }
 
 .container {
@@ -677,7 +681,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -686,7 +690,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Open Sans";
 }
 
@@ -710,7 +714,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -1044,42 +1048,72 @@ h4 {
 
 /* Modifications pour Optimisation SEO/Accessibilité */ 
 figure{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 991px){
     figure{
         margin-left: 60px;
         margin-right: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
-blockquote::before{
-    content: "\f10d";
+blockquote::after{
+    content: "\f10e";
     font-family: "FontAwesome";
     font-style: initial;
     color: #F3976C;
-    font-size: 30px;
+    opacity: 0.2;
+    font-size: 100px;
     position: absolute;
-    left: 80px;
+    right: 15px;
+    margin-top: -90px;
 }
 
 .quote__text{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 24px;
+    text-align: left;
+    font-style: italic;
 }
 
-@media (max-width: 767px){
-    blockquote::before{
+@media (max-width: 991px){
+    blockquote::after{
         position: absolute;
-        left: 60px;
+        right: 60px;
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 991px){
     .quote__text{
         font-size: 20px;
         line-height: 20px;
+    }
+}
+
+.quote__legend{
+    font-size: 16px;
+}
+
+.title-one{
+    max-width: 700px;
+    margin: 40px auto 60px auto;
+    color: black;
+}
+
+.title-three{
+    max-width: 400px;
+    margin: 40px auto 40px auto;
+    color: black;
+}
+
+@media (max-width: 991px){
+    .title-one, .title-three{
+        margin: 30px auto 30px auto;
     }
 }
