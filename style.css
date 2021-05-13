@@ -238,12 +238,11 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .7);
 }
 
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-sm,
 .l-bloc a:hover .icon-md,
@@ -257,6 +256,22 @@ a:hover {
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
+}
+
+.l-bloc .navbar a{
+    transform: scale(1);
+    transition: all 200ms;
+    font-weight: 700;
+}
+
+.l-bloc .navbar a:hover{
+    color: #F3976C;
+}
+
+@media (min-width: 992px){
+    .l-bloc .navbar a:hover{
+        transform: scale(1.1);
+    }
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -291,7 +306,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .navbar {
@@ -445,6 +460,10 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.mg-md-b{
+    margin: 10px 20px 20px 20px;
 }
 
 .mg-lg {
@@ -759,9 +778,30 @@ h4 {
     margin-bottom: 24px;
 }
 
+@media (max-width: 768px){
+    .portfolio-thumb {
+        margin-bottom: 10px;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    .portfolio-title{
+        width: 300px;
+    }
+}
+
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+
+@media (max-width: 768px){
+    .portfolio-row {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 
 .avatar {
@@ -769,7 +809,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 40px 40px 40px 40px;
 }
 
@@ -791,7 +831,11 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:white;
+}
+
+.txt-white{
+    color: white;
 }
 
 .btn-atomic-tangerine {
@@ -808,6 +852,10 @@ h4 {
 }
 
 .ltc-white {
+    color: #FFFFFF!important;
+}
+
+.txt-white {
     color: #FFFFFF!important;
 }
 
@@ -830,10 +878,6 @@ h4 {
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
@@ -908,7 +952,7 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
