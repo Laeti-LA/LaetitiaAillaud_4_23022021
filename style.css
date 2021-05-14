@@ -264,7 +264,8 @@ a:hover {
     font-weight: 700;
 }
 
-.l-bloc .navbar a:hover{
+.l-bloc .navbar a:hover,
+.l-bloc .navbar a:focus{
     color: #F3976C;
 }
 
@@ -844,14 +845,15 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: black;
+    color: white;
     transform: scale(1);
     transition: all 300ms;
 }
 
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus{
+    background: #F3976C;
     color: #FFFFFF!important;
     transform: scale(1.1);
 }
@@ -1158,6 +1160,7 @@ blockquote::after{
 
 .quote__legend{
     font-size: 16px;
+    color: #333333;
 }
 
 .title-one{
