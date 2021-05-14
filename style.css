@@ -715,7 +715,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto auto auto auto;
 }
 
@@ -801,6 +801,15 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+
+@media (max-width: 768px){
+    .portfolio-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
 }
 
 @media (max-width: 768px){

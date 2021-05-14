@@ -2065,8 +2065,6 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
 }
 
 @media (max-width: 768px){
@@ -2342,7 +2340,9 @@ pre code {
         width: 41.66666667%
     }
     .col-sm-4 {
-        width: 33.33333333%
+        width: 33.33333333%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .col-sm-2 {
         width: 16.66666667%
