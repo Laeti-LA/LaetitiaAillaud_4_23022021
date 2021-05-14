@@ -787,9 +787,13 @@ h4 {
 @media (max-width: 768px){
     .portfolio-thumb {
         margin-bottom: 10px;
-        height: 300px;
-        width: 300px;
+        height: 320px;
+        width: 320px;
     }
+}
+
+.portfolio-img{
+    height: 320px;
 }
 
 @media (max-width: 768px){
