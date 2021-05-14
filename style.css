@@ -718,6 +718,11 @@ p {
     margin: auto auto auto auto;
 }
 
+.tight-width-whitespace-b{
+    max-width: 550px;
+    margin: auto;
+}
+
 .h1 {
     font-size: 24px;
     font-family: "Open Sans";
@@ -874,10 +879,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-banniere {
@@ -1191,4 +1192,21 @@ a .social{
 
 a .social:focus{
     transform: scale(1.1);
+}
+
+/* Formulaire */
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
