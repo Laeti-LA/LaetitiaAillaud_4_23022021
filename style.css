@@ -803,12 +803,20 @@ h4 {
     margin-top: 50px;
 }
 
-@media (max-width: 768px){
-    .portfolio-row{
+.portfolio-row .col-sm-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (min-width: 768px){
+    .portfolio-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        column-gap: 20px;
+        align-items: flex-start;
     }
 }
 
@@ -964,7 +972,7 @@ h4 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1184,9 +1192,9 @@ blockquote::after{
     color: black;
 }
 
-@media (max-width: 991px){
+@media (max-width: 767.9px){
     .title-one, .title-three{
-        margin: 30px auto 30px auto;
+        margin: 30px 30px 30px 30px;
     }
 }
 
