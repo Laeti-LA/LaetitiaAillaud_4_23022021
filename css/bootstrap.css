@@ -2068,8 +2068,8 @@ pre code {
     .col-sm-6{
         position: relative;
         min-height: 1px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
